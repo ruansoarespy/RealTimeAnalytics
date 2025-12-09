@@ -36,13 +36,12 @@ Projeto de **Engenharia de Dados em tempo real** utilizando serviços da AWS, de
 Estrutura do projeto:
 ```
 RealTimeAnalytics/
-    lambda/            - Funções Lambda
-    kinesis/           - Scripts de ingestão ou configuração
-    glue/              - Scripts ETL e catálogos
+    lambda_functions.py/       - Funções Lambda
+    consumer_realtime/        - Scripts de ingestão ou configuração
+    jobglue.py/              - Scripts ETL e catálogos
+    consumer_batch/         -consumo de dados em batch
     s3/                - Estrutura raw/gold
-    athena_queries/    - Queries de análise
-    cloudwatch/        - Dashboards ou logs de exemplo
-    docs/              - Prints, diagramas, explicações
+
     README.txt
 ```
 Como usar:
